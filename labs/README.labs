@@ -1,0 +1,40 @@
+This directory contains code associated with the labs
+
+This is my bridges link: http://bridges-games.herokuapp.com/assignments/21/dtarwala
+
+>>>>>>>>>>>>>
+
+Documentation for NonBlockingGame:
+https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1games_1_1_non_blocking_game.html
+
+
+>>>>>>>>>>>>>>
+
+2048 description:
+
+Tasks
+Create the game 2048 using the Bridges API. Being under the MIT license the game can be found in a variety of places online if the game is unfamiliar. The basics is each turn a new tile spawns on a 4x4 grid that contains the value 2 and rarely 4. The player can choose any cardinal direction to move all blocks at one time. Once all blocks have reached either the edge or another block they stop and the player can choose another direction. If two blocks have the same value instead they merge and the values are added together. The ultimate goal of the game is to get the value 2048 on a tile. The player loses if they are unable to make a move.
+
+Set up the board
+There needs to be an object that represents a game tile. It holds a position and a value. Each tile takes up 1/4th of the grid in both directions.
+
+Add functionality
+When the player hits an arrow key the tiles should move until they either merge or they hit a wall/other tile that cannot be merged. While the tiles are moving the game should be a state that does not receive input. Once all tiles are moved or merged then the player can input the next move. After each turn the game should check if there is a game over (no moves to make) or the player has won (a tile has value 2048).
+
+
+>>>>>>>>>>>>>>>>>
+
+RaceCar description:
+
+Create a game where the player drives a car around an ever-changing track.
+
+Tasks
+- Initialize a 2D array the size of your game grid.
+- Initialize the NamedColors and symbols for your car, walls and background.
+- Create a function that places a wall on the left and right of your grid that outlines the road.
+- Add additional conditions to your wall creation function to make the walls move closer to each other every few seconds.
+- Add additional conditions to your wall creation function so that the walls move side to side every few seconds making it seem as though the road is turning.
+- Create a function that allows the player to move the car left and right on the road.
+- Create a function that checks for a collision between the car and the wall and triggers a game over.
+- Create a function that places random objects that the player could crash into and trigger a game over.
+- Create a win scenario.
